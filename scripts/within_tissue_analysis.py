@@ -40,7 +40,6 @@ parser.add_argument('-v', '--remove_hyper', action='store_true',
                     help='Remove hypermutated samples')
 parser.add_argument('-f', '--alt_folder', default='Auto',
                     help='location to save')
-
 parser.add_argument('-x', '--x_matrix', default=None,
                     help='Filename of features to use in model')
 parser.add_argument('--filename_mut', default=None,
