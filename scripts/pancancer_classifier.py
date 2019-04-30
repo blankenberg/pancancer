@@ -71,9 +71,9 @@ sys.path.insert(0, os.path.join('scripts', 'util'))
 from tcga_util import get_args, get_threshold_metrics, integrate_copy_number
 from tcga_util import shuffle_columns
 
+# RASopathy genes as defined by https://www.ncbi.nlm.nih.gov/gtr/tests/GTR000521315/methodology/
 RASOPATHY_GENES = set(['BRAF', 'CBL', 'HRAS', 'KRAS', 'MAP2K1', 'MAP2K2', 'NF1',
                       'NRAS', 'PTPN11', 'RAF1', 'SHOC2', 'SOS1', 'SPRED1', 'RIT1'])
-
 
 # Load command arguments
 args = get_args()

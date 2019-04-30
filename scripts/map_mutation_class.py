@@ -33,12 +33,11 @@ parser.add_argument('-g', '--genes',
                     help='string of the genes to extract or genelist file')
 parser.add_argument('-c', '--copy_number', action='store_true',
                     help='optional flag to include copy number info in map')
-
-parser.add_argument( '--filename_copy_loss', default=None,
+parser.add_argument('--filename_copy_loss', default=None,
                     help='Filename of copy number loss')
-parser.add_argument( '--filename_copy_gain', default=None,
+parser.add_argument('--filename_copy_gain', default=None,
                     help='Filename of copy number gain')
-parser.add_argument( '--filename_raw_mut', default=None,
+parser.add_argument('--filename_raw_mut', default=None,
                     help='Filename of raw mut MAF')
 
 args = parser.parse_args()

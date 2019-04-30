@@ -38,15 +38,16 @@ def get_rail_id(row):
             all_sample_ids.append(sample_id)
     return(all_sample_ids)
 
+
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--sample_file', default=None,
                     help='Filename of SNAPTRON samples')
-parser.add_argument( '--junction_file', default=None,
+parser.add_argument('--junction_file', default=None,
                     help='Filename of SNAPTRON junctions')
-parser.add_argument( '--alt_folder', default=None,
+parser.add_argument('--alt_folder', default=None,
                     help='Folder containing classifier')
-parser.add_argument( '--output', default=None,
+parser.add_argument('--output', default=None,
                     help='Filename of output junctions')
 
 args = parser.parse_args()
