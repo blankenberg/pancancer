@@ -34,17 +34,17 @@ parser.add_argument('-u', '--copy_number', action='store_true',
 
 parser.add_argument('-x', '--x_matrix', default=None,
                     help='Filename of features to use in model')
-parser.add_argument( '--filename_mut', default=None,
+parser.add_argument('--filename_mut', default=None,
                     help='Filename of sample/gene mutations to use in model')
-parser.add_argument( '--filename_mut_burden', default=None,
+parser.add_argument('--filename_mut_burden', default=None,
                     help='Filename of sample mutation burden to use in model')
-parser.add_argument( '--filename_sample', default=None,
+parser.add_argument('--filename_sample', default=None,
                     help='Filename of patient/samples to use in model')
-parser.add_argument( '--filename_copy_loss', default=None,
+parser.add_argument('--filename_copy_loss', default=None,
                     help='Filename of copy number loss')
-parser.add_argument( '--filename_copy_gain', default=None,
+parser.add_argument('--filename_copy_gain', default=None,
                     help='Filename of copy number gain')
-parser.add_argument( '--filename_cancer_gene_classification', default=None,
+parser.add_argument('--filename_cancer_gene_classification', default=None,
                     help='Filename of cancer gene classification table')
 
 args = parser.parse_args()

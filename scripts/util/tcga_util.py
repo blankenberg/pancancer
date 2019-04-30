@@ -12,7 +12,7 @@ def get_args():
     Get arguments for the main pancancer classifier script
     """
     import argparse
-    
+
     parser = argparse.ArgumentParser()
     parser.add_argument('-g', '--genes',
                         help='Comma separated string of HUGO gene symbols')
@@ -63,23 +63,23 @@ def get_args():
                         help='Remove mutation data from y matrix')
     parser.add_argument('-z', '--drop_rasopathy', action='store_true',
                         help='Decision to drop rasopathy genes from X matrix')
-    parser.add_argument( '--drop_x_genes', default=None,
+    parser.add_argument('--drop_x_genes', default=None,
                         help='Comma separated list of genes to be dropped from X matrix')
     parser.add_argument('-q', '--drop_expression', action='store_true',
                         help='Decision to drop gene expression values from X')
     parser.add_argument('-j', '--drop_covariates', action='store_true',
                         help='Decision to drop covariate information from X')
-    parser.add_argument( '--filename_mut', default=None,
+    parser.add_argument('--filename_mut', default=None,
                         help='Filename of sample/gene mutations to use in model')
-    parser.add_argument( '--filename_mut_burden', default=None,
+    parser.add_argument('--filename_mut_burden', default=None,
                         help='Filename of sample mutation burden to use in model')
-    parser.add_argument( '--filename_sample', default=None,
+    parser.add_argument('--filename_sample', default=None,
                         help='Filename of patient/samples to use in model')
-    parser.add_argument( '--filename_copy_loss', default=None,
+    parser.add_argument('--filename_copy_loss', default=None,
                         help='Filename of copy number loss')
-    parser.add_argument( '--filename_copy_gain', default=None,
+    parser.add_argument('--filename_copy_gain', default=None,
                         help='Filename of copy number gain')
-    parser.add_argument( '--filename_cancer_gene_classification', default=None,
+    parser.add_argument('--filename_cancer_gene_classification', default=None,
                         help='Filename of cancer gene classification table')
 
     args = parser.parse_args()

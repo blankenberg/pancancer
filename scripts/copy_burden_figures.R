@@ -39,14 +39,13 @@ option_list = list(
   )
 )
 
-opt <-parse_args(OptionParser(option_list = option_list))
+opt <- parse_args(OptionParser(option_list = option_list))
 
 if (opt$version){
   # print version and exit
   cat(paste("PanCancer version", toString(packageVersion("pancancer"))), "\n")
   quit()
 }
-
 
 # Set File Names
 if ( !is.na(opt$alt_folder) ){
@@ -61,7 +60,6 @@ if ( !is.na(opt$alt_folder) ){
   snaptron_file <- file.path("scripts", "snaptron",
                              "junctions_with_mutations.csv.gz")
 }
-
 
 frac_alt_plot <- file.path(base_file, "figures", "fraction_altered_plot.pdf")
 violin_plot <- file.path(base_file, "figures", "seg_altered_violin_plot.pdf")
