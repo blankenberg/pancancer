@@ -186,7 +186,7 @@ if drop_rasopathy:
 else:
     drop_x_genes = set()
 if args.drop_x_genes:
-    drop_x_genes = drop_x_genes.union( set( map( lambda x: x.strip(), args.drop_x_genes.split(',') ) ) )
+    drop_x_genes = drop_x_genes.union(set(args.drop_x_genes))
 if drop_x_genes:
     x_drop = list(drop_x_genes.intersection(rnaseq_full_df.columns))
     rnaseq_full_df.drop(x_drop, axis=1, inplace=True)

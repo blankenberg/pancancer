@@ -22,7 +22,7 @@ import pandas as pd
 parser = argparse.ArgumentParser()
 parser.add_argument('-c', '--classifier_folder',
                     help='string of the location of classifier data')
-parser.add_argument( '--filename_burden', default=None,
+parser.add_argument('--filename_burden', default=None,
                     help='Filename of burden')
 args = parser.parse_args()
 

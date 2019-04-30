@@ -63,8 +63,8 @@ def get_args():
                         help='Remove mutation data from y matrix')
     parser.add_argument('-z', '--drop_rasopathy', action='store_true',
                         help='Decision to drop rasopathy genes from X matrix')
-    parser.add_argument('--drop_x_genes', default=None,
-                        help='Comma separated list of genes to be dropped from X matrix')
+    parser.add_argument('--drop_x_genes', default=None, nargs='+',
+                        help='Genes to be dropped from X matrix')
     parser.add_argument('-q', '--drop_expression', action='store_true',
                         help='Decision to drop gene expression values from X')
     parser.add_argument('-j', '--drop_covariates', action='store_true',
